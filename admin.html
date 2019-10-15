@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admins Area</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body onload="renderAdminsArea()">
+    <h1>Welcome dear admin, </h1>
+    <div class="sort-select">
+            Sort By:
+            <select class="sort-by" onchange="onSetSort(this.value)">
+                <option hidden>Select</option>
+                <option>username</option>
+                <option>Last Login</option>
+            </select>
+    </div>
+    <div class="admin-panel">
+        
+    </div>
+    <a href="index.html" onclick="logOut()">logout</a>
+    <script src="js/safe-service.js"></script>
+    <script src="js/safe-controller.js"></script>
+</body>
+
+</html>

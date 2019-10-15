@@ -1,0 +1,86 @@
+body {
+    background-image: linear-gradient(to right, #ebebeb, #719fb9, #89afa1, #ac8be0, #c357d6);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+
+fieldset {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+    border: 2px solid white;
+}
+
+input {
+    padding: 7px;
+    height: 20px;
+}
+
+button {
+    height: 36px;
+}
+
+.header {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.msg {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.article {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.705);
+    margin: auto;
+    height: 425px;
+    width: 80%;
+    padding: 0 20px;
+    padding-top: 20px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 2px dotted rgba(0, 0, 0, 0.603);
+    text-align: left;
+    font-size: 25px;
+    box-shadow: 10px 10px 20px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-margin-top-collapse: discard;
+    transition-delay: .5s;
+    transition: .5s;
+}
+
+.article span {
+    font-weight: bold;
+}
+
+img {
+    height: 340px;
+    width: 600px;
+    border: 3px solid black;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logout-btn {
+    margin-left: 940px;
+    margin-bottom: 10px;
+}
+
+.admin-link{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}

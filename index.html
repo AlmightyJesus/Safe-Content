@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Safe Content</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1 class="header">Welcome to the safe </h1>
+    <p class="admin-link hide"></p>
+    <div class="login-form">
+        <fieldset>
+            <legend>please log in:</legend>
+            <input class="username-input" type="text" placeholder="username" />
+            <input class="pass-input" type="password" placeholder="password" />
+            <button class="login-button" onclick="onCheckLogin()">Login</button>
+        </fieldset>
+        <h2 class="msg"></h2>
+    </div>
+    <div class="main-content"></div>
+    <script>
+        var passInput = document.querySelector('.pass-input');
+        passInput.addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.querySelector(".login-button").click();
+            }
+        });
+    </script>
+    <script src="js/safe-service.js"></script>
+    <script src="js/safe-controller.js"></script>
+</body>
+
+</html>
